@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",               // <— REQUIRED for static export
+  trailingSlash: true,            // optional but recommended for SWA
 };
 
 export default nextConfig;
